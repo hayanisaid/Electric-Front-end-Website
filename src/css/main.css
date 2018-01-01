@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: rgba(0, 0, 0, 0.87) !important;
+  text-decoration: none; }
+
+.back, .s-section .item1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.p {
+  padding: 10em 0 0; }
+
+nav ul li.active {
+  background: #7fc5ca !important; }
+
+nav ul li a:hover {
+  background: #7fc5ca !important; }
+
+.stick {
+  padding: 3em 0 !important;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out; }
+  .stick .brand-logo {
+    padding-top: 0 !important;
+    margin: 0 !important; }
+
+/*start style navbar*/
+.transform, .btn-icon, .s-section .item a, .navbar-fixed .nav-wrapper li > a, .navbar-fixed .nav-wrapper .brand-logo, .intro span, .w-section span, .s-section span {
+  text-transform: uppercase; }
+
+.btn-icon, .s-section .item a {
+  border: 1px solid #333;
+  padding: 1em;
+  margin-left: -311px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer; }
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+  z-index: 2; }
+  .link-underline:after {
+    content: "";
+    background: rgba(127, 197, 202, 0.47);
+    position: absolute;
+    width: 100%;
+    border: 6px solid rgba(127, 197, 202, 0.47);
+    top: 41px;
+    display: block;
+    z-index: -1; }
+
+.s-number:after {
+  border-bottom: solid 1px #293033;
+  content: '';
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  width: 45px; }
+
+.navbar-fixed {
+  z-index: 999999 !important;
+  position: fixed;
+  /* navbar */ }
+  .navbar-fixed nav {
+    background: #fff !important; }
+  .navbar-fixed .nav-wrapper {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    background: #fff; }
+  .navbar-fixed .nav-wrapper li > a {
+    color: #333 !important;
+    font-size: 1em; }
+  .navbar-fixed .nav-wrapper .brand-logo {
+    color: #141010;
+    font-weight: bold; }
+    .navbar-fixed .nav-wrapper .brand-logo span {
+      background: #AC0C0C;
+      display: inline-block; }
+    .navbar-fixed .nav-wrapper .brand-logo .brand1 {
+      width: 20px;
+      height: 30px; }
+    .navbar-fixed .nav-wrapper .brand-logo .brand2 {
+      width: 20px;
+      height: 30px; }
+    .navbar-fixed .nav-wrapper .brand-logo .brand3 {
+      width: 40px;
+      height: 30px; }
+
+/* navbar */
+/* intro section */
+.intro {
+  padding-top: 15em; }
+  .intro h2 {
+    font-weight: bold; }
+
+/* intro section */
+/* explore section */
+.explore .sec {
+  background: #7fc5ca;
+  padding: 1.5em; }
+.explore h4 {
+  font-weight: bold; }
+.explore p {
+  line-height: 2;
+  font-size: 2.5vh; }
+
+/* explore section */
+/* w-section */
+.w-section {
+  background: rgba(232, 232, 232, 0.77);
+  position: relative;
+  z-index: 3;
+  margin-top: -51px; }
+  .w-section img {
+    filter: sepia(100%); }
+  .w-section span {
+    color: #888; }
+  .w-section h2 {
+    font-weight: bold; }
+  .w-section .ms {
+    overflow: hidden;
+    padding: 2em 0; }
+  .w-section:hover .btn-icon, .w-section:hover .s-section .item a, .s-section .item .w-section:hover a {
+    margin-left: 0; }
+
+/* w-section */
+/* s-section */
+.s-section .item1 {
+  background-image: url("../images/poster.jpg");
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  padding: 6em 3em 4em 0em; }
+  .s-section .item1:hover .btn-icon, .s-section .item1:hover .item a, .s-section .item .item1:hover a {
+    margin-left: 0; }
+  .s-section .item1:hover .overlay {
+    background: rgba(232, 152, 152, 0.92); }
+  .s-section .item1 .overlay {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(243, 129, 129, 0.92);
+    z-index: -1; }
+.s-section .item {
+  background: #fff;
+  padding: 2em; }
+.s-section span {
+  color: #888; }
+.s-section p {
+  font-weight: bold;
+  font-size: 2rem; }
+.s-section .item2 {
+  padding: 8em 2em 3em 0em;
+  background-image: url("../images/bag.jpg");
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out; }
+  .s-section .item2:hover .btn-icon, .s-section .item2:hover .item a, .s-section .item .item2:hover a {
+    margin-left: 0; }
+  .s-section .item2:hover .overlay {
+    background: rgba(187, 231, 234, 0.83); }
+  .s-section .item2 .overlay {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(127, 197, 202, 0.9);
+    z-index: -1; }
+.s-section .m-section {
+  background: rgba(245, 153, 110, 0.88);
+  padding: 4em;
+  position: relative;
+  top: -40px;
+  z-index: 2;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out; }
+  .s-section .m-section:hover {
+    background: #F98B60; }
+  .s-section .m-section a {
+    display: block;
+    font-size: 2em;
+    font-weight: bold; }
+  .s-section .m-section span {
+    color: #000; }
+
+/* s-section */
+/* b-section */
+.b-section {
+  padding: 6em 2em; }
+  .b-section p {
+    font-size: 4em;
+    font-weight: bold; }
+  .b-section span {
+    color: #888; }
+
+/* b-section */
+/* footer */
+.footer {
+  background: #293033;
+  padding: 6em 2em; }
+  .footer .s-number {
+    color: #888; }
+  .footer .s-number:after {
+    border-bottom: solid 1px #888 !important; }
+  .footer .title {
+    color: #888; }
+  .footer h3, .footer li {
+    color: #f5f5f5; }
+  .footer form input[type=text] {
+    background: #f5f5f5 !important; }
+  .footer textarea {
+    background: #f5f5f5 !important;
+    height: 18rem; }
+  .footer form input[type=submit] {
+    background: #7fc5ca !important;
+    width: 100%;
+    color: #141010; }
+  .footer form label {
+    color: #f5f5f5;
+    font-weight: bold; }
+
+/* footer */
+
+/*# sourceMappingURL=main.css.map */
