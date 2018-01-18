@@ -54,10 +54,16 @@ nav ul li.active{
          cursor: pointer;
 	}
 .link-underline{
+
 	position: relative;
 	display: inline-block;
 	z-index: 2;
 	&:after{
+		@media(max-width: 768px){
+		position: relative;
+		top: 2px;
+		border: 3px solid rgba(127, 197, 202, 0.47);
+	}
 		content: "";
 	 background: rgba(127, 197, 202, 0.47);
     position: absolute;
@@ -78,7 +84,7 @@ nav ul li.active{
     width: 45px;
 }
 .navbar-fixed{
-	
+	 
 	z-index: 999999 !important;
 	position:fixed;
 	nav{
@@ -87,7 +93,16 @@ nav ul li.active{
 	}
 .nav-wrapper{
     @include transition(.3s ease-in-out);
-    background:#fff;	
+    background:#fff;
+    @media(max-width: 768px){
+    	background: red;
+    }
+    ul{
+    	margin-right: 4em;
+      li{
+      	margin: 2px;
+      }
+    }	
 }
 /* navbar */
 
@@ -97,9 +112,12 @@ color: #333 !important;
 font-size: 1em;
 }
 .nav-wrapper .brand-logo{
+
 	color: #141010;
 	@extend .transform ;
 	font-weight: bold;
+	margin-left: 1em !important;
+
 	span{
 		background: #AC0C0C;
 		display: inline-block;
@@ -119,6 +137,11 @@ font-size: 1em;
 		width: 40px;
 		height: 30px;	
 	}
+	@media(max-width:768px) {
+	display: inline-block;
+	width: 100%;
+	font-size: 4vh;	
+	}
 	
 }
 }
@@ -131,6 +154,11 @@ font-size: 1em;
 	}
 	h2{
 		font-weight: bold;
+		font-size: 8vh;
+		@media(max-width: 768px){
+			font-size: 3vh;
+		
+		}
 	}
 }
 /* intro section */
@@ -157,7 +185,7 @@ p{
 	background: rgba(232, 232, 232, 0.77);
 	position:relative;
 	z-index: 3;
-	margin-top: -51px;
+	max-height: 100px;
 	
 	img{
 		filter:sepia(100%);
@@ -167,7 +195,8 @@ p{
 		color: #888;
 	}
 	h2{
-		font-weight: bold;
+	font-weight: bold;
+	font-size: 8vh;
 	}
 
 	.ms{
@@ -275,6 +304,10 @@ p{
 	p{
 		font-size: 4em;
 		font-weight: bold;
+		font-size: 8vh;
+		@media(max-width: 768px){
+			font-size: 4vh;
+		}
 	}
 	span{
 		color: #888;
@@ -328,3 +361,32 @@ p{
 }
 
 /* brands */
+
+/* About */
+.about-intro{
+ 
+	p{
+		font-size: 6vh;
+
+	}
+}
+.w-team{
+	h3{
+		color: #888;
+		font-size: 4vh;
+		text-transform: uppercase;
+		font-family: $mainfont;
+		margin:0;
+
+	}
+	span{
+		color: #666;
+		font-size: 2vh;
+		font-family: $mainfont;
+	}
+
+	.m3{
+		margin-bottom: 1em;
+	}
+}
+/* About */
